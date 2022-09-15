@@ -4,15 +4,14 @@
 $conexion =mysqli_connect('localhost','root','perez','bdviolencia');
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
-
-
+    
 $idUsuario=$_POST['idUsuario'];
 $idCategoria=$_POST['idCategoria'];
 $declaracion=$_POST['declaracion'];
 $foto=$_POST['foto'];
 
 
-$path="denuncia/$idCategoria.png";
+$path="denuncia/$idUsuario.png";
 $actualpath="http://localhost/violencia/$path";
 /*$idDepartamento=2;
 $nombres='Juana';
