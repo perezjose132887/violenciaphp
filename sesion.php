@@ -1,5 +1,6 @@
 <?php
-$conexion =mysqli_connect('localhost','root','perez','bdviolencia');
+//$conexion =mysqli_connect('localhost','root','perez','bdviolencia');
+include 'ConectarBD.php';
 
 $json=array();
 if(isset($_GET["correo"]) &&  isset($_GET["contrasenha"])){

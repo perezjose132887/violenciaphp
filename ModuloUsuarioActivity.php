@@ -1,7 +1,6 @@
 <?php
-
-
-$conexion =mysqli_connect('localhost','root','perez','bdviolencia');
+//$conexion =mysqli_connect('localhost','root','perez','bdviolencia');
+include 'ConectarBD.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 
@@ -13,7 +12,6 @@ $segundoApellido=$_POST['segundoApellido'];
 $telefono=$_POST['telefono'];
 $ci=$_POST['ci'];
 $sexo=$_POST['sexo'];
-$nombreUsuario=$_POST['nombreUsuario'];
 $contrasena=$_POST['contrasena'];
 $foto=$_POST['foto'];
 $correo=$_POST['correo'];
@@ -34,7 +32,7 @@ $contrasena='1234';
 $correo='juana@gmail.com';
 $rol='usuario';*/
 
-$consulta="INSERT INTO usuario (idUsuario,idDepartamento,nombres,primerApellido,segundoApellido,numeroCelular,numeroCI,sexo,nombreUsuario,contrasenha,foto,correo,rol) VALUES(NULL,'$idDepartamento','$nombres','$primerApellido','$segundoApellido','$telefono','$ci','$sexo','$nombreUsuario','$contrasena','$actualpath','$correo','$rol')";
+$consulta="INSERT INTO usuario (idUsuario,idDepartamento,nombres,primerApellido,segundoApellido,numeroCelular,numeroCI,sexo,contrasenha,foto,correo,rol) VALUES(NULL,'$idDepartamento','$nombres','$primerApellido','$segundoApellido','$telefono','$ci','$sexo','$contrasena','$actualpath','$correo','$rol')";
 /*$resultado =mysqli_query($conexion,$consulta);
 mysqli_close($conexion);*/
 

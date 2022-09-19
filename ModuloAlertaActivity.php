@@ -1,5 +1,6 @@
 <?php
-$conexion =mysqli_connect('localhost','root','perez','bdviolencia');
+//$conexion =mysqli_connect('localhost','root','perez','bdviolencia');
+include 'ConectarBD.php';
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
 

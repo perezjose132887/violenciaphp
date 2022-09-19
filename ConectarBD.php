@@ -1,10 +1,10 @@
 <?php
-$mysql = new mysqli(
+$conexion = new mysqli(
     "localhost",
     "root",
     "perez",
     "bdviolencia"
 );
-if($mysql->connect_error){
-    die("la coneccion fallo".$mysql->connect_error);
+if($conexion->connect_error){
+    die("la coneccion fallo".$conexion->connect_error);
 }
